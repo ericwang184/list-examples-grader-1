@@ -16,7 +16,7 @@ java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnit
 
 count=`wc -l < testFails.txt`
 if [[ $count -eq 0 ]]
-then
+then 
 echo 'tests passed'
 else 
 echo 'some tests failed'
