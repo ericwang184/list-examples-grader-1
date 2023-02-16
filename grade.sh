@@ -18,6 +18,6 @@ count=`wc -l < testFails.txt`
 if [[ $count -eq 0 ]]
 then 
 echo 'tests passed'
-else 
+else  
 echo 'some tests failed'
 fi
