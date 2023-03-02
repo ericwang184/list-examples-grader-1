@@ -12,7 +12,7 @@ class ListExamples {
     List<String> result = new ArrayList<>();
     for(String s: list) {
       if(sc.checkString(s)) {
-        result.add(s); //switched from (0,s)
+        result.add(0, s);
       }
     }
     return result;
@@ -24,7 +24,7 @@ class ListExamples {
   static List<String> merge(List<String> list1, List<String> list2) {
     List<String> result = new ArrayList<>();
     int index1 = 0, index2 = 0;
-    while(index1 < list1.size() && index2 < list2.size()) { 
+    while(index1 < list1.size() && index2 < list2.size()) {
       if(list1.get(index1).compareTo(list2.get(index2)) < 0) {
         result.add(list1.get(index1));
         index1 += 1;
@@ -40,7 +40,7 @@ class ListExamples {
     }
     while(index2 < list2.size()) {
       result.add(list2.get(index2));
-      index2 += 1;
+      index1 += 1;
     }
     return result;
   }
